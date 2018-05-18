@@ -26,10 +26,10 @@ svg.youtube-icon {
 
 .search-form {
   position: absolute;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   top: 25%;
   width: 100%;
-  left: 29%;
 }
 
 input {
@@ -38,16 +38,16 @@ input {
   color: #bdc3c7;
   border: 1px solid #b2bec3;
   font-family: Arial, Helvetica, sans-serif;
-  width: 35%;
+  width: 33%;
+  max-width: 562px;
 }
 
 .search-button {
   display: inline-block;
   height: 30px;
-  margin-left: -4px;
   padding: 0 25px 0 25px;
   color: #7f8c8d;
-  background-color: #dfe6e9;
+  background-color: #ecf0f1;
   border: 1px solid #b2bec3;
   border-left: none;
 }
