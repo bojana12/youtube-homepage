@@ -1,0 +1,174 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ecf0f1; }
+  header .bars-icon {
+    position: relative;
+    left: 10%;
+    bottom: 36%;
+    color: #a9a9a9; }
+  header svg.youtube-icon {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    left: 20%; }
+  header .search-form {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 25%; }
+  header input {
+    width: 33%;
+    max-width: 562px;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    border: 1px solid #b2bec3;
+    border-radius: 0 2px 2px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bdc3c7; }
+  header .search-button {
+    display: inline-block;
+    height: 30px;
+    padding: 0 25px 0 25px;
+    border: 1px solid #b2bec3;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+    background-color: #f8f8ff;
+    color: #7f8c8d; }
+  header .search-button:hover {
+    color: black;
+    background-color: #ecf0f1; }
+  header .search-button:focus {
+    outline: 0; }
+  header input:focus {
+    outline: 0;
+    border: 1px solid black; }
+  header .user-photo {
+    position: relative;
+    top: 15px;
+    padding-right: 30px;
+    color: #a9a9a9; }
+  header .video, header .bell, header .apps {
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: #a9a9a9; }
+  header .right-icons {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    float: right;
+    text-align: right; }
+  header .left-icons {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    float: left; }
+
+.youtube-video {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 15px; }
+  @media screen and (min-width: 1024px) {
+    .youtube-video {
+      display: inline-block;
+      width: 60%;
+      height: 360px; } }
+  .youtube-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+aside {
+  position: relative;
+  display: none;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 23px;
+  font-family: Roboto, Arial, sans-serif; }
+  @media screen and (min-width: 1024px) {
+    aside {
+      position: absolute;
+      display: inline-block;
+      width: 40%;
+      height: 100%;
+      margin-top: 15px;
+      margin-left: 20px; } }
+  aside .intro {
+    display: inline-block;
+    margin-top: 0;
+    color: gray; }
+  aside .autoplay {
+    float: right;
+    color: #a9a9a9;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0; }
+    aside .autoplay .autoplay-icon {
+      font-size: 20px;
+      padding: 0 15px; }
+
+.about-video {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto; }
+  .about-video .title {
+    font-size: 20px; }
+  .about-video .content {
+    border-bottom: solid 1px #ecf0f1;
+    height: 100%; }
+    .about-video .content p {
+      display: inline-block;
+      margin-top: 0;
+      font-size: 18px;
+      font-family: Roboto, Arial, sans-serif;
+      color: #696969; }
+    .about-video .content .view-icons {
+      display: inline-block;
+      float: right;
+      font-size: 18px; }
+      .about-video .content .view-icons .like, .about-video .content .view-icons .dislike, .about-video .content .view-icons .share, .about-video .content .view-icons .add-to, .about-video .content .view-icons .settings {
+        padding: 10px;
+        color: #A9A9A9; }
+      .about-video .content .view-icons span.views {
+        display: inline-block;
+        padding: 0 5px;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #a9a9a9; }
+      .about-video .content .view-icons .line {
+        display: inline-block;
+        height: 38px;
+        border-bottom: 1px solid #1E90FF; }
+
+.about-singer {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto; }
+  .about-singer .singer-photo {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; }
+  .about-singer .description {
+    position: relative;
+    display: inline-block;
+    font-family: Roboto, Arial, sans-serif;
+    padding-left: 10px; }
+    .about-singer .description p.profil a {
+      color: black;
+      text-decoration: none; }

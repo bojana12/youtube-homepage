@@ -1,0 +1,39 @@
+@import 'variables.scss';
+
+aside {
+  position: relative;
+  display: none;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 23px;
+  font-family: Roboto, Arial, sans-serif;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .intro {
+    display: inline-block;
+    margin-top: 0;
+    color:gray;
+  }
+
+  .autoplay {
+    float: right;
+    color: $medium-grey;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+
+    .autoplay-icon {
+      font-size: 20px;
+      padding: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import 'variables.scss';
+
+.about-video {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  .title {
+    font-size: 20px;
+  }
+
+  .content {
+    border-bottom: solid 1px #ecf0f1;
+    height: 100%;
+
+    p {
+      display: inline-block;
+      margin-top: 0;
+      font-size: 18px;
+      font-family: $primary-ff;
+      color: #696969;
+    }
+
+    .view-icons {
+      display: inline-block;
+      float: right;
+      font-size: 18px;
+
+      .like, .dislike, .share, .add-to, .settings {
+        padding: 10px;
+        color: $dark-grey;
+      }
+
+      span.views {
+        display: inline-block;
+        padding: 0 5px;
+        font-family: $primary-ff;
+        font-size: 14px;
+        color: $medium-grey;  
+      }
+
+      .line {
+        display: inline-block;
+        height: 38px;
+        border-bottom: 1px solid #1E90FF;
+      }
+    }
+  }
+}

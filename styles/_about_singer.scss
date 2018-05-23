@@ -1,0 +1,29 @@
+@import 'variables.scss';
+
+.about-singer {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  .singer-photo {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .description {
+    position: relative;
+    display: inline-block;
+    font-family: $primary-ff;
+    padding-left: 10px;
+    
+    p.profil {
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}

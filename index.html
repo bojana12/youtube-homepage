@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./build/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
     
     <title>YouTube homepage clone</title>
@@ -75,9 +75,57 @@
     </header>
 
     <main>
-      <section></section>
+      <section class="container">
+        <div class="youtube-video">
+          <iframe width="820" height="400" src="https://www.youtube.com/embed/OfS1jFck8YQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       
-      <aside></aside>
+        <aside>
+          <p class="intro">Up next</p>
+          <p class="autoplay">AUTOPLAY
+              <i class="fas fa-toggle-on autoplay-icon"></i>
+          </p>
+
+          <div class="thumbnails">
+
+          </div>
+        </aside>
+
+        <div class="about-video">
+          <div class="title">
+            <p>INNA - Nirvana | Official Music Video</p>
+          </div>
+
+          <div class="content">
+            <p>55,811,860 views</p>
+            <div class="view-icons">
+              <div class="line">
+                <a href="#" class="like"><i class="fas fa-thumbs-up"><span class="views">489K</span></i></a>
+                <a href="#" class="dislike"><i class="fas fa-thumbs-down"><span class="views">16K</span></i></a>
+              </div>
+              <a href="#" class="share"><i class="fas fa-share"><span class="views">SHARE</span></i></a>
+              <a href="#" class="add-to"><i class="fas fa-plus-circle"></i></a>
+              <a href="#" class="settings"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-singer">
+          <img class="singer-photo" src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Inna-mtv4e.jpg/363px-Inna-mtv4e.jpg
+          alt="Pretty singer with brown hair">
+            <div class="description">
+              <p class="profil"><a href="#">INNA</a></p>
+              <p class="date">Published on Nov 28, 2017</p>
+              <p class="autor">Official music video by INNA performing the single "Nirvana". (C) & (P) 2017 Global Records</p>
+              <p class="concerts">Concerts: booking@innaofficial.com</p>
+            </div>
+        </div>
+
+        <div class="comments">
+
+        </div>
+      </section>
+  
     </main>
   </body>
 </html>
