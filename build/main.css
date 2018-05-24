@@ -160,7 +160,9 @@ aside {
   height: 100%;
   margin: 0 auto; }
   .about-singer .singer-photo {
+    position: relative;
     display: inline-block;
+    top: -4.69em;
     width: 48px;
     height: 48px;
     border-radius: 50%; }
@@ -168,7 +170,31 @@ aside {
     position: relative;
     display: inline-block;
     font-family: Roboto, Arial, sans-serif;
-    padding-left: 10px; }
+    padding-left: 10px;
+    font-size: 14px; }
+    .about-singer .description .profil {
+      margin-bottom: 0;
+      font-weight: bold; }
+    .about-singer .description .date {
+      margin-top: 0;
+      color: grey; }
+    .about-singer .description .concerts {
+      margin-bottom: 0; }
     .about-singer .description p.profil a {
       color: black;
       text-decoration: none; }
+  .about-singer .fulltext {
+    display: block;
+    margin: 0 auto; }
+  .about-singer .fulltext p,
+  .about-singer .less {
+    display: none; }
+  .about-singer .fulltext:target p,
+  .about-singer .fulltext:target .less {
+    display: block; }
+  .about-singer .fulltext:target .more {
+    display: none; }
+  .about-singer .more, .about-singer .less {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold; }

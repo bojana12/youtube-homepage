@@ -7,7 +7,9 @@
   margin: 0 auto;
 
   .singer-photo {
+    position: relative;
     display: inline-block;
+    top: -4.69em;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -18,6 +20,21 @@
     display: inline-block;
     font-family: $primary-ff;
     padding-left: 10px;
+    font-size: 14px;
+
+    .profil {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    .date {
+      margin-top: 0;
+      color: grey;
+    }
+
+    .concerts {
+      margin-bottom: 0;
+    }
     
     p.profil {
       a {
@@ -25,5 +42,30 @@
         text-decoration: none;
       }
     }
+  }
+
+  .fulltext {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .fulltext p,
+  .less {
+    display: none;
+  }
+
+  .fulltext:target p,
+  .fulltext:target .less {
+    display: block;
+  }
+
+  .fulltext:target .more {
+    display: none;
+  }
+
+  .more, .less {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
   }
 }
