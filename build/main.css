@@ -57,13 +57,11 @@ header {
     font-size: 18px;
     color: #a9a9a9; }
   header .right-icons {
-    display: inline-block;
     width: 200px;
     height: 60px;
     float: right;
     text-align: right; }
   header .left-icons {
-    display: inline-block;
     width: 200px;
     height: 60px;
     float: left; }
@@ -71,8 +69,8 @@ header {
 .youtube-video {
   position: relative;
   display: block;
-  width: 90%;
-  height: 500px;
+  width: 85%;
+  height: 450px;
   margin: 0 auto;
   margin-top: 15px; }
   @media screen and (min-width: 1024px) {
@@ -122,7 +120,7 @@ aside {
       padding: 0 15px; }
 
 .about-video {
-  width: 90%;
+  width: 85%;
   height: 100%;
   margin: 0 auto; }
   .about-video .title {
@@ -137,7 +135,6 @@ aside {
       font-family: Roboto, Arial, sans-serif;
       color: #696969; }
     .about-video .content .view-icons {
-      display: inline-block;
       float: right;
       font-size: 18px; }
       .about-video .content .view-icons .like, .about-video .content .view-icons .dislike, .about-video .content .view-icons .share, .about-video .content .view-icons .add-to, .about-video .content .view-icons .settings {
@@ -152,49 +149,111 @@ aside {
       .about-video .content .view-icons .line {
         display: inline-block;
         height: 38px;
-        border-bottom: 1px solid #1E90FF; }
+        border-bottom: 2px solid #1E90FF; }
 
-.about-singer {
+.singer-photo {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  left: 7%;
+  margin-top: 15px;
+  border-radius: 50%; }
+
+.about-song {
   display: block;
   width: 90%;
   height: 100%;
   margin: 0 auto; }
-  .about-singer .singer-photo {
+  .about-song .description {
     position: relative;
     display: inline-block;
-    top: -4.69em;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%; }
-  .about-singer .description {
-    position: relative;
-    display: inline-block;
+    width: 70%;
+    height: 100%;
     font-family: Roboto, Arial, sans-serif;
-    padding-left: 10px;
+    left: 10%;
+    margin-top: -6%;
     font-size: 14px; }
-    .about-singer .description .profil {
+    .about-song .description .profil {
       margin-bottom: 0;
       font-weight: bold; }
-    .about-singer .description .date {
+    .about-song .description .date {
       margin-top: 0;
       color: grey; }
-    .about-singer .description .concerts {
+    .about-song .description .concerts {
       margin-bottom: 0; }
-    .about-singer .description p.profil a {
+    .about-song .description p.profil a {
       color: black;
       text-decoration: none; }
-  .about-singer .fulltext {
-    display: block;
-    margin: 0 auto; }
-  .about-singer .fulltext p,
-  .about-singer .less {
+    .about-song .description .fulltext {
+      display: block;
+      width: 90%; }
+      .about-song .description .fulltext .inna-online, .about-song .description .fulltext .global-records {
+        margin-bottom: 0; }
+        .about-song .description .fulltext .inna-online a, .about-song .description .fulltext .global-records a {
+          color: blue; }
+      .about-song .description .fulltext .licensing {
+        margin-top: 0; }
+      .about-song .description .fulltext .album-online a {
+        color: blue; }
+      .about-song .description .fulltext p#text {
+        margin-top: 30px; }
+      .about-song .description .fulltext p#list {
+        border-bottom: 1px solid #ecf0f1;
+        padding-bottom: 15px; }
+        .about-song .description .fulltext p#list .category {
+          color: grey; }
+        .about-song .description .fulltext p#list .music {
+          position: relative;
+          left: 10%;
+          color: blue; }
+        .about-song .description .fulltext p#list .license {
+          color: grey; }
+        .about-song .description .fulltext p#list .standard-license {
+          position: relative;
+          left: 12%;
+          font-weight: bold; }
+      .about-song .description .fulltext .music-in-this-video .song {
+        color: grey; }
+      .about-song .description .fulltext .music-in-this-video .song-name {
+        position: relative;
+        left: 14%;
+        font-weight: bold; }
+      .about-song .description .fulltext .music-in-this-video .artist {
+        color: grey; }
+      .about-song .description .fulltext .music-in-this-video .artist-name {
+        position: relative;
+        left: 14%;
+        color: blue; }
+      .about-song .description .fulltext .music-in-this-video .album {
+        color: grey; }
+      .about-song .description .fulltext .music-in-this-video .album-name {
+        position: relative;
+        left: 12.5%;
+        font-weight: bold; }
+      .about-song .description .fulltext .music-in-this-video .licensed-by {
+        color: grey; }
+      .about-song .description .fulltext .license-text {
+        position: relative;
+        left: 20%;
+        margin-top: -5%;
+        width: 83%;
+        font-size: 13px;
+        font-weight: bold; }
+      .about-song .description .fulltext ul {
+        margin-top: 0;
+        padding-left: 0; }
+        .about-song .description .fulltext ul li {
+          list-style-type: none; }
+  .about-song .fulltext p,
+  .about-song .less {
     display: none; }
-  .about-singer .fulltext:target p,
-  .about-singer .fulltext:target .less {
+  .about-song .fulltext:target p,
+  .about-song .fulltext:target .less {
     display: block; }
-  .about-singer .fulltext:target .more {
+  .about-song .fulltext:target .more {
     display: none; }
-  .about-singer .more, .about-singer .less {
+  .about-song .more, .about-song .less {
     text-decoration: none;
     color: grey;
     font-weight: bold; }

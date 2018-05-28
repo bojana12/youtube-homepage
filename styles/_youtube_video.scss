@@ -1,8 +1,8 @@
 .youtube-video {
   position: relative;
   display: block;
-  width: 90%;
-  height: 500px;
+  width: 85%;
+  height: 450px;
   margin: 0 auto;
   margin-top: 15px;
 
@@ -18,22 +18,7 @@
     height: 100%;
     top: 0;
     left: 0;
-
-    @media screen and (min-width: 1439px) {
-      // width: 80%;
-      // padding-left: 15%;
-    }
   }
 }
 
-// .youtube-video iframe {
-//   /* margin-top: 25px;
-//   position: relative;
-//   left: 33%; */
 
-//   width: 90%;
-//   margin: 0 auto;
-//   padding-left: 5%;
-//   padding-right: 5%;
-//   padding-top: 20px;
-// }

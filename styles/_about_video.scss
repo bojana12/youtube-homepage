@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .about-video {
-  width: 90%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
 
@@ -22,7 +22,6 @@
     }
 
     .view-icons {
-      display: inline-block;
       float: right;
       font-size: 18px;
 
@@ -42,7 +41,7 @@
       .line {
         display: inline-block;
         height: 38px;
-        border-bottom: 1px solid #1E90FF;
+        border-bottom: 2px solid #1E90FF;
       }
     }
   }

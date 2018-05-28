@@ -1,0 +1,177 @@
+@import 'variables.scss';
+
+.singer-photo {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  left: 7%;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.about-song {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  .description {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    font-family: $primary-ff;
+    left: 10%;
+    margin-top: -6%;
+    font-size: 14px;
+
+    .profil {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    .date {
+      margin-top: 0;
+      color: grey;
+    }
+
+    .concerts {
+      margin-bottom: 0;
+    }
+
+    p.profil {
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+    .fulltext {
+      display: block;
+      width: 90%;
+
+      .inna-online, .global-records {
+        margin-bottom: 0;
+        
+        a {
+          color: blue;
+        }
+      }
+
+      .licensing {
+        margin-top: 0;
+      }
+
+      .album-online {
+
+        a {
+          color: blue;
+        }
+      }
+
+      p#text {
+        margin-top: 30px;
+      }
+
+      p#list {
+        border-bottom: 1px solid #ecf0f1;
+        padding-bottom: 15px;
+
+        .category {
+          color: grey;
+        }
+
+        .music {
+          position: relative;
+          left: 10%;
+          color: blue;
+        }
+
+        .license {
+          color: grey;
+        }
+
+        .standard-license {
+          position: relative;
+          left: 12%;
+          font-weight: bold;
+        }
+      }
+
+      .music-in-this-video {
+        .song {
+          color: grey;
+        }
+
+        .song-name {
+          position: relative;
+          left: 14%;
+          font-weight: bold;
+        }
+
+        .artist {
+          color: grey;
+        }
+
+        .artist-name {
+          position: relative;
+          left: 14%;
+          color: blue;
+        }
+
+        .album {
+          color: grey;
+        }
+
+        .album-name {
+          position: relative;
+          left: 12.5%;
+          font-weight: bold;
+        }
+
+        .licensed-by {
+          color: grey;
+        }
+      }
+
+      .license-text {
+        position: relative;
+        width: 83%;
+        left: 20%;
+        margin-top: -5%;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      
+      ul {
+        margin-top: 0;
+        padding-left: 0;
+
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .fulltext p,
+  .less {
+    display: none;
+  }
+
+  .fulltext:target p,
+  .fulltext:target .less {
+    display: block;
+  }
+
+  .fulltext:target .more {
+    display: none;
+  }
+
+  .more, .less {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+  }
+}
