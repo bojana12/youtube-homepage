@@ -150,6 +150,18 @@ aside {
         display: inline-block;
         height: 38px;
         border-bottom: 2px solid #1E90FF; }
+  .about-video .subscribe-button {
+    position: absolute;
+    width: 146px;
+    height: 36px;
+    margin-top: 20px;
+    left: 77.5%;
+    border: none;
+    border-radius: 2px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    background-color: red;
+    color: white; }
 
 .singer-photo {
   display: inline-block;
@@ -235,9 +247,9 @@ aside {
         color: grey; }
       .about-song .description .fulltext .license-text {
         position: relative;
-        left: 20%;
-        margin-top: -5%;
         width: 83%;
+        left: 21%;
+        margin-top: -5%;
         font-size: 13px;
         font-weight: bold; }
       .about-song .description .fulltext ul {
@@ -245,6 +257,15 @@ aside {
         padding-left: 0; }
         .about-song .description .fulltext ul li {
           list-style-type: none; }
+  .about-song .subscribe-button {
+    width: 146px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    background-color: red;
+    color: white; }
   .about-song .fulltext p,
   .about-song .less {
     display: none; }

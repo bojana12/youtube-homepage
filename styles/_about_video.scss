@@ -45,4 +45,18 @@
       }
     }
   }
+
+  .subscribe-button {
+    position: absolute;
+    width: 146px;
+    height: 36px;
+    margin-top: 20px;
+    left: 77.5%;
+    border: none;
+    border-radius: 2px;
+    font-family: $primary-ff;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+  }
 }

@@ -138,7 +138,7 @@
       .license-text {
         position: relative;
         width: 83%;
-        left: 20%;
+        left: 21%;
         margin-top: -5%;
         font-size: 13px;
         font-weight: bold;
@@ -154,6 +154,18 @@
       }
     }
   }
+
+  .subscribe-button {
+    width: 146px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    font-family: $primary-ff;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+  }
+
 
   .fulltext p,
   .less {
