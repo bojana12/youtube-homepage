@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+.comments {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: $primary-ff;
+
+  .all-comments {
+    font-size: 16px;
+    font-weight: 400;
+
+    .sort {
+      position: relative;
+      display: inline-block;
+      left: 5%;
+      font-family: $primary-ff;
+      color: grey;
+
+      .sort-by {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 8px;
+      }
+    }
+  }
+}

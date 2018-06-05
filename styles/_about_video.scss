@@ -7,17 +7,22 @@
 
   .title {
     font-size: 20px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 17px;
+    }
   }
 
   .content {
     border-bottom: solid 1px #ecf0f1;
+    width: 98%;
     height: 100%;
 
-    p {
+    .number-of-views {
       display: inline-block;
       margin-top: 0;
-      font-size: 18px;
-      font-family: $primary-ff;
+      font-family: Arial;
+      font-size: 16px;
       color: #696969;
     }
 
@@ -25,7 +30,11 @@
       float: right;
       font-size: 18px;
 
-      .like, .dislike, .share, .add-to, .settings {
+      .like, 
+      .dislike, 
+      .share, 
+      .add-to, 
+      .settings {
         padding: 10px;
         color: $dark-grey;
       }
@@ -40,7 +49,7 @@
 
       .line {
         display: inline-block;
-        height: 38px;
+        height: 33px;
         border-bottom: 2px solid #1E90FF;
       }
     }
@@ -58,5 +67,17 @@
     font-size: 14px;
     background-color: red;
     color: white;
+
+    @media screen and (min-width: 1024px) {
+      left: 74.5%;
+    }
   }
+
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    width: 100%;
+    margin: 0;
+   }
 }
+
+
