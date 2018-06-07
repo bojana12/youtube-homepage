@@ -6,9 +6,11 @@
   margin: 0 auto;
   font-family: $primary-ff;
 
-  .all-comments {
+  .number-of-comments {
     font-size: 16px;
     font-weight: 400;
+    margin: 5px 0 30px 0;
+    
 
     .sort {
       position: relative;
@@ -21,6 +23,107 @@
         font-size: 16px;
         font-weight: 500;
         margin-left: 8px;
+      }
+    }
+  }
+
+  .all-comments {
+   
+    .visitor-photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .add-comment {
+      position: relative;
+      width: 100%;
+      margin-top: 15px;
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      p {
+        position: absolute;
+        top: -25%;
+        left: 6%;
+        display: inline-block;
+        width: 94%;
+        font-size: 14px;
+        color: grey;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ecf0f1;
+      }
+    }
+  }
+
+  .listener-comment {
+    position: relative;
+
+    .about-listener {
+
+      .description {
+        position: relative;
+        left: 6%;
+        margin-bottom: 3%;
+      }
+
+      .visitor-photo {
+        position: absolute;
+      }
+
+      .listener-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333333;
+      }
+
+      .time-of-post {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+        color: grey;
+        margin-left: 10px;
+      }
+
+      .comment {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+
+      .all-replies {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 3rem;
+        color: #333333;
+      }
+
+      .icons {
+        margin-bottom: -2%;
+
+        a {
+          color: #A9A9A9;
+          text-decoration: none;
+        }
+
+        .fa-thumbs-up,
+        .fa-thumbs-down {
+          font-size: 14px;
+        }
+
+        .likes,
+        .dislikes {
+          padding: 10px;
+          font-size: 13px;
+          color: grey;
+        }
+
+        .dislikes {
+          padding-left: 25px;
+          color: #404040;
+        }
       }
     }
   }

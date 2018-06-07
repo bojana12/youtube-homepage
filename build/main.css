@@ -189,7 +189,7 @@ header {
     font-size: 14px; }
     .about-song .description .profil {
       margin-bottom: 0;
-      font-weight: bold; }
+      font-weight: 600; }
     .about-song .description .date {
       margin-top: 0;
       color: grey; }
@@ -343,16 +343,80 @@ aside {
   height: 100%;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif; }
-  .comments .all-comments {
+  .comments .number-of-comments {
     font-size: 16px;
-    font-weight: 400; }
-    .comments .all-comments .sort {
+    font-weight: 400;
+    margin: 5px 0 30px 0; }
+    .comments .number-of-comments .sort {
       position: relative;
       display: inline-block;
       left: 5%;
       font-family: Roboto, Arial, sans-serif;
       color: grey; }
-      .comments .all-comments .sort .sort-by {
+      .comments .number-of-comments .sort .sort-by {
         font-size: 16px;
         font-weight: 500;
         margin-left: 8px; }
+  .comments .all-comments .visitor-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  .comments .all-comments .add-comment {
+    position: relative;
+    width: 100%;
+    margin-top: 15px; }
+    .comments .all-comments .add-comment img {
+      margin-bottom: 15px; }
+    .comments .all-comments .add-comment p {
+      position: absolute;
+      top: -25%;
+      left: 6%;
+      display: inline-block;
+      width: 94%;
+      font-size: 14px;
+      color: grey;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ecf0f1; }
+  .comments .listener-comment {
+    position: relative; }
+    .comments .listener-comment .about-listener .description {
+      position: relative;
+      left: 6%;
+      margin-bottom: 3%; }
+    .comments .listener-comment .about-listener .visitor-photo {
+      position: absolute; }
+    .comments .listener-comment .about-listener .listener-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #333333; }
+    .comments .listener-comment .about-listener .time-of-post {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 400;
+      color: grey;
+      margin-left: 10px; }
+    .comments .listener-comment .about-listener .comment {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2rem; }
+    .comments .listener-comment .about-listener .all-replies {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 3rem;
+      color: #333333; }
+    .comments .listener-comment .about-listener .icons {
+      margin-bottom: -2%; }
+      .comments .listener-comment .about-listener .icons a {
+        color: #A9A9A9;
+        text-decoration: none; }
+      .comments .listener-comment .about-listener .icons .fa-thumbs-up,
+      .comments .listener-comment .about-listener .icons .fa-thumbs-down {
+        font-size: 14px; }
+      .comments .listener-comment .about-listener .icons .likes,
+      .comments .listener-comment .about-listener .icons .dislikes {
+        padding: 10px;
+        font-size: 13px;
+        color: grey; }
+      .comments .listener-comment .about-listener .icons .dislikes {
+        padding-left: 25px;
+        color: #404040; }
