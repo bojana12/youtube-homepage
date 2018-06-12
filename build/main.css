@@ -80,6 +80,12 @@ header {
       display: inline-block;
       width: 63%;
       border-bottom: 1px solid #ecf0f1; } }
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 68%; } }
+  @media screen and (min-width: 2560px) {
+    .container {
+      width: 72%; } }
 
 .youtube-video {
   position: relative;
@@ -99,6 +105,12 @@ header {
     height: 100%;
     top: 0;
     left: 0; }
+  @media screen and (min-width: 1440px) {
+    .youtube-video {
+      height: 488px; } }
+  @media screen and (min-width: 2560px) {
+    .youtube-video {
+      height: 700px; } }
 
 .about-video {
   width: 85%;
@@ -110,9 +122,7 @@ header {
       .about-video .title {
         font-size: 17px; } }
   .about-video .content {
-    border-bottom: solid 1px #ecf0f1;
-    width: 98%;
-    height: 100%; }
+    border-bottom: solid 1px #ecf0f1; }
     .about-video .content .number-of-views {
       display: inline-block;
       margin-top: 0;
@@ -154,6 +164,9 @@ header {
     @media screen and (min-width: 1024px) {
       .about-video .subscribe-button {
         left: 74.5%; } }
+    @media screen and (min-width: 2560px) {
+      .about-video .subscribe-button {
+        left: 85%; } }
   @media screen and (min-width: 1024px) {
     .about-video {
       position: relative;
@@ -221,38 +234,38 @@ header {
           color: grey; }
         .about-song .description .fulltext p#list .music {
           position: relative;
-          left: 10%;
+          left: 9.5%;
           color: blue; }
         .about-song .description .fulltext p#list .license {
           color: grey; }
         .about-song .description .fulltext p#list .standard-license {
           position: relative;
-          left: 11.5%;
+          left: 12%;
           font-weight: bold; }
       .about-song .description .fulltext .music-in-this-video .song {
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .song-name {
         position: relative;
-        left: 14%;
+        left: 16%;
         font-weight: bold; }
       .about-song .description .fulltext .music-in-this-video .artist {
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .artist-name {
         position: relative;
-        left: 14%;
+        left: 15.5%;
         color: blue; }
       .about-song .description .fulltext .music-in-this-video .album {
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .album-name {
         position: relative;
-        left: 12.5%;
+        left: 13.5%;
         font-weight: bold; }
       .about-song .description .fulltext .music-in-this-video .licensed-by {
         color: grey; }
       .about-song .description .fulltext .license-text {
         position: relative;
         width: 83%;
-        left: 21.5%;
+        left: 24.5%;
         margin-top: -5%;
         font-size: 13px;
         font-weight: bold; }
@@ -264,8 +277,16 @@ header {
     @media screen and (min-width: 1024px) {
       .about-song .description {
         width: 100%;
-        left: 5%;
+        left: 3%;
         margin-top: -10%; } }
+    @media screen and (min-width: 1440px) {
+      .about-song .description {
+        left: 0;
+        margin-top: -8%; } }
+    @media screen and (min-width: 2560px) {
+      .about-song .description {
+        left: -3%;
+        margin-top: -6%; } }
   .about-song .fulltext p,
   .about-song .less {
     display: none; }
@@ -293,6 +314,12 @@ aside {
       width: 37%;
       height: 100%;
       margin-top: 20px; } }
+  @media screen and (min-width: 1440px) {
+    aside {
+      width: 28%; } }
+  @media screen and (min-width: 2560px) {
+    aside {
+      width: 18%; } }
   aside .up-next {
     display: inline-block;
     margin-top: 0; }
@@ -345,8 +372,7 @@ aside {
   font-family: Roboto, Arial, sans-serif; }
   .comments .number-of-comments {
     font-size: 16px;
-    font-weight: 400;
-    margin: 5px 0 30px 0; }
+    margin: 25px 0 30px 0; }
     .comments .number-of-comments .sort {
       position: relative;
       display: inline-block;
@@ -354,9 +380,8 @@ aside {
       font-family: Roboto, Arial, sans-serif;
       color: grey; }
       .comments .number-of-comments .sort .sort-by {
-        font-size: 16px;
-        font-weight: 500;
-        margin-left: 8px; }
+        font-size: 14px;
+        margin-left: 6px; }
   .comments .all-comments .visitor-photo {
     width: 40px;
     height: 40px;
@@ -382,7 +407,10 @@ aside {
     .comments .listener-comment .about-listener .description {
       position: relative;
       left: 6%;
-      margin-bottom: 3%; }
+      margin-bottom: 1%; }
+      @media screen and (min-width: 1024px) {
+        .comments .listener-comment .about-listener .description {
+          left: 10%; } }
     .comments .listener-comment .about-listener .visitor-photo {
       position: absolute; }
     .comments .listener-comment .about-listener .listener-name {
@@ -420,3 +448,18 @@ aside {
       .comments .listener-comment .about-listener .icons .dislikes {
         padding-left: 25px;
         color: #404040; }
+  @media screen and (min-width: 1024px) {
+    .comments {
+      width: 60%;
+      margin-left: 0; } }
+
+main {
+  width: 100%;
+  height: 100%; }
+  @media screen and (min-width: 1044px) {
+    main {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 2560px) {
+    main {
+      width: 70%; } }

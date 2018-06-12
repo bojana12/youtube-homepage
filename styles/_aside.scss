@@ -16,6 +16,14 @@ aside {
     margin-top: 20px;
   }
 
+  @media screen and (min-width: 1440px) {
+    width: 28%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    width: 18%;
+  }
+
   .up-next {
     display: inline-block;
     margin-top: 0;

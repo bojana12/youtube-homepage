@@ -15,8 +15,6 @@
 
   .content {
     border-bottom: solid 1px #ecf0f1;
-    width: 98%;
-    height: 100%;
 
     .number-of-views {
       display: inline-block;
@@ -70,6 +68,10 @@
 
     @media screen and (min-width: 1024px) {
       left: 74.5%;
+    }
+
+    @media screen and (min-width: 2560px) {
+      left: 85%;
     }
   }
 
