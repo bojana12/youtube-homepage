@@ -7,71 +7,73 @@ header {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #ecf0f1; }
-  header .bars-icon {
-    position: relative;
-    left: 10%;
-    bottom: 36%;
-    color: #a9a9a9; }
-  header svg.youtube-icon {
-    position: relative;
-    width: 100px;
+  header .left-icons {
+    width: 200px;
     height: 60px;
-    left: 20%; }
+    float: left; }
+    header .left-icons .bars-icon {
+      position: relative;
+      left: 10%;
+      bottom: 36%;
+      color: #a9a9a9; }
+    header .left-icons svg.youtube-icon {
+      position: relative;
+      width: 100px;
+      height: 60px;
+      left: 20%; }
   header .search-form {
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     top: 25%; }
-  header input {
-    width: 33%;
-    max-width: 562px;
-    height: 30px;
-    padding: 0 10px 0 10px;
-    border: 1px solid #b2bec3;
-    border-radius: 0 2px 2px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #bdc3c7; }
-  header .search-button {
-    display: inline-block;
-    height: 30px;
-    padding: 0 25px 0 25px;
-    border: 1px solid #b2bec3;
-    border-left: none;
-    border-radius: 0 2px 2px 0;
-    background-color: #f8f8ff;
-    color: #7f8c8d; }
-  header .search-button:hover {
-    color: black;
-    background-color: #ecf0f1; }
-  header .search-button:focus {
-    outline: 0; }
-  header input:focus {
-    outline: 0;
-    border: 1px solid black; }
-  header .user-photo {
-    position: relative;
-    top: 15px;
-    padding-right: 30px;
-    color: #a9a9a9; }
-  header .video, header .bell, header .apps {
-    position: relative;
-    top: 10px;
-    padding-right: 20px;
-    font-size: 18px;
-    color: #a9a9a9; }
+    header .search-form input {
+      width: 36%;
+      max-width: 562px;
+      height: 30px;
+      padding: 0 10px 0 10px;
+      border: 1px solid #b2bec3;
+      border-radius: 0 2px 2px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #bdc3c7; }
+    header .search-form input:focus {
+      outline: 0;
+      border: 1px solid black; }
+    header .search-form .search-button {
+      display: inline-block;
+      height: 30px;
+      padding: 0 25px 0 25px;
+      border: 1px solid #b2bec3;
+      border-left: none;
+      border-radius: 0 2px 2px 0;
+      background-color: #f8f8ff;
+      color: #7f8c8d; }
+    header .search-form .search-button:focus {
+      outline: 0; }
+    header .search-form .search-button:hover {
+      color: black;
+      background-color: #ecf0f1; }
   header .right-icons {
     width: 200px;
     height: 60px;
     float: right;
     text-align: right; }
-  header .left-icons {
-    width: 200px;
-    height: 60px;
-    float: left; }
+    header .right-icons .video,
+    header .right-icons .bell,
+    header .right-icons .apps {
+      position: relative;
+      top: 10px;
+      padding-right: 20px;
+      font-size: 18px;
+      color: #a9a9a9; }
+    header .right-icons .user-photo {
+      position: relative;
+      top: 15px;
+      padding-right: 30px;
+      color: #a9a9a9; }
 
 .container {
-  width: 100%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif; }
@@ -90,7 +92,7 @@ header {
 .youtube-video {
   position: relative;
   display: block;
-  width: 85%;
+  width: 100%;
   height: 450px;
   margin: 0 auto;
   margin-top: 15px; }
@@ -100,11 +102,8 @@ header {
       width: 97%;
       height: 360px; } }
   .youtube-video iframe {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; }
+    height: 100%; }
   @media screen and (min-width: 1440px) {
     .youtube-video {
       height: 488px; } }
@@ -113,10 +112,11 @@ header {
       height: 700px; } }
 
 .about-video {
-  width: 85%;
+  width: 100%;
   height: 100%;
   margin: 0 auto; }
   .about-video .title {
+    margin: 20px 0 10px 0;
     font-size: 20px; }
     @media screen and (min-width: 1024px) {
       .about-video .title {
@@ -125,7 +125,7 @@ header {
     border-bottom: solid 1px #ecf0f1; }
     .about-video .content .number-of-views {
       display: inline-block;
-      margin-top: 0;
+      margin-bottom: 16px;
       font-family: Arial;
       font-size: 16px;
       color: #696969; }
@@ -140,7 +140,6 @@ header {
         padding: 10px;
         color: #A9A9A9; }
       .about-video .content .view-icons span.views {
-        display: inline-block;
         padding: 0 5px;
         font-family: Roboto, Arial, sans-serif;
         font-size: 14px;
@@ -149,124 +148,115 @@ header {
         display: inline-block;
         height: 33px;
         border-bottom: 2px solid #1E90FF; }
-  .about-video .subscribe-button {
+  @media screen and (min-width: 1024px) {
+    .about-video {
+      position: relative;
+      width: 97%;
+      margin: 0; } }
+
+.about-song {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ecf0f1; }
+  .about-song .singer-photo {
+    display: inline-block;
     position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-top: 15px;
+    border-radius: 50%; }
+  .about-song .subscribe-button {
+    position: relative;
     width: 146px;
     height: 36px;
+    float: right;
     margin-top: 20px;
-    left: 77.5%;
     border: none;
     border-radius: 2px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
     background-color: red;
     color: white; }
-    @media screen and (min-width: 1024px) {
-      .about-video .subscribe-button {
-        left: 74.5%; } }
-    @media screen and (min-width: 2560px) {
-      .about-video .subscribe-button {
-        left: 85%; } }
-  @media screen and (min-width: 1024px) {
-    .about-video {
-      position: relative;
-      width: 100%;
-      margin: 0; } }
-
-.singer-photo {
-  display: inline-block;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  left: 7%;
-  margin-top: 15px;
-  border-radius: 50%; }
-  @media screen and (min-width: 1024px) {
-    .singer-photo {
-      left: 0; } }
-
-.about-song {
-  display: block;
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-  border-bottom: 1px solid #ecf0f1; }
   .about-song .description {
     position: relative;
     display: inline-block;
-    width: 60%;
     height: 100%;
-    font-family: Roboto, Arial, sans-serif;
     left: 7%;
-    margin-top: -7%;
+    top: 20px;
+    font-family: Roboto, Arial, sans-serif;
     font-size: 14px; }
     .about-song .description .profil {
       margin-bottom: 0;
       font-weight: 600; }
+      .about-song .description .profil a {
+        text-decoration: none;
+        color: black; }
     .about-song .description .date {
-      margin-top: 0;
       color: grey; }
-    .about-song .description .concerts {
-      margin-bottom: 0; }
-    .about-song .description p.profil a {
-      color: black;
-      text-decoration: none; }
+    .about-song .description .author {
+      line-height: 60px; }
     .about-song .description .fulltext {
       display: block;
-      width: 90%;
-      margin-bottom: 20px; }
+      width: 76%;
+      margin-bottom: 40px; }
+      .about-song .description .fulltext .licensing {
+        margin-top: -2%; }
+      .about-song .description .fulltext .album-online a {
+        color: blue;
+        text-decoration: none; }
       .about-song .description .fulltext .inna-online, .about-song .description .fulltext .global-records {
         margin-bottom: 0; }
         .about-song .description .fulltext .inna-online a, .about-song .description .fulltext .global-records a {
           color: blue;
           text-decoration: none; }
-      .about-song .description .fulltext .licensing {
-        margin-top: 0; }
-      .about-song .description .fulltext .album-online a {
-        color: blue;
-        text-decoration: none; }
       .about-song .description .fulltext p#text {
         margin-top: 30px; }
       .about-song .description .fulltext p#list {
         border-bottom: 1px solid #ecf0f1;
         padding-bottom: 15px; }
         .about-song .description .fulltext p#list .category {
+          display: inline-block;
           color: grey; }
         .about-song .description .fulltext p#list .music {
-          position: relative;
-          left: 9.5%;
+          display: inline-block;
+          margin-left: 63px;
           color: blue; }
-        .about-song .description .fulltext p#list .license {
-          color: grey; }
         .about-song .description .fulltext p#list .standard-license {
-          position: relative;
-          left: 12%;
+          display: inline-block;
+          margin-left: 74px;
           font-weight: bold; }
+        .about-song .description .fulltext p#list .license {
+          display: inline-block;
+          color: grey; }
       .about-song .description .fulltext .music-in-this-video .song {
+        display: inline-block;
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .song-name {
-        position: relative;
-        left: 16%;
+        display: inline-block;
+        margin-left: 93px;
         font-weight: bold; }
       .about-song .description .fulltext .music-in-this-video .artist {
+        display: inline-block;
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .artist-name {
-        position: relative;
-        left: 15.5%;
+        display: inline-block;
+        margin: 10px 0 10px 91px;
         color: blue; }
       .about-song .description .fulltext .music-in-this-video .album {
+        display: inline-block;
         color: grey; }
       .about-song .description .fulltext .music-in-this-video .album-name {
-        position: relative;
-        left: 13.5%;
+        display: inline-block;
+        margin-left: 83px;
         font-weight: bold; }
       .about-song .description .fulltext .music-in-this-video .licensed-by {
+        display: inline-block;
         color: grey; }
       .about-song .description .fulltext .license-text {
-        position: relative;
-        width: 83%;
-        left: 24.5%;
-        margin-top: -5%;
+        display: inline-block;
+        width: 79%;
+        margin-left: 45px;
         font-size: 13px;
         font-weight: bold; }
       .about-song .description .fulltext ul {
@@ -276,21 +266,23 @@ header {
           list-style-type: none; }
     @media screen and (min-width: 1024px) {
       .about-song .description {
-        width: 100%;
-        left: 3%;
-        margin-top: -10%; } }
+        width: 90%;
+        margin-top: -7%;
+        margin-left: 2%; } }
     @media screen and (min-width: 1440px) {
       .about-song .description {
-        left: 0;
-        margin-top: -8%; } }
+        margin-top: -5%;
+        margin-left: 0.5%; } }
     @media screen and (min-width: 2560px) {
       .about-song .description {
-        left: -3%;
-        margin-top: -6%; } }
+        margin-left: -1.5%;
+        padding-top: 1.5%; } }
   .about-song .fulltext p,
+  .about-song .fulltext span,
   .about-song .less {
     display: none; }
   .about-song .fulltext:target p,
+  .about-song .fulltext:target span,
   .about-song .fulltext:target .less {
     display: block; }
   .about-song .fulltext:target .more {
@@ -299,6 +291,9 @@ header {
     text-decoration: none;
     color: grey;
     font-weight: bold; }
+  @media screen and (min-width: 1024px) {
+    .about-song {
+      width: 97%; } }
 
 aside {
   position: relative;

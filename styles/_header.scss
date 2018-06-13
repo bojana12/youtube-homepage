@@ -6,19 +6,25 @@ header {
   height: 60px;
   border-bottom: 1px solid #ecf0f1;
 
-  .bars-icon {
-    position: relative;
-    left: 10%;
-    bottom: 36%;
-    color: $medium-grey;
-  }
-  
-  svg.youtube-icon {
-    position: relative;
-    width: 100px;
+  .left-icons {
+    width: 200px;
     height: 60px;
-    left: 20%;
-  }
+    float: left;
+
+    .bars-icon {
+      position: relative;
+      left: 10%;
+      bottom: 36%;
+      color: $medium-grey;
+    }
+
+    svg.youtube-icon {
+      position: relative;
+      width: 100px;
+      height: 60px;
+      left: 20%;
+    }
+  } // end of left-icons
   
   .search-form {
     position: absolute;
@@ -26,69 +32,65 @@ header {
     width: 100%;
     justify-content: center;
     top: 25%;
-  }
-  
-  input {
-    width: 33%;
-    max-width: 562px;
-    height: 30px;
-    padding: 0 10px 0 10px;
-    border: 1px solid $light-grey;
-    border-radius: 0 2px 2px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #bdc3c7;
-  }
-  
-  .search-button {
-    display: inline-block;
-    height: 30px;
-    padding: 0 25px 0 25px;
-    border: 1px solid $light-grey;
-    border-left: none;
-    border-radius: 0 2px 2px 0;
-    background-color: #f8f8ff;
-    color: #7f8c8d;
-  }
-  
-  .search-button:hover {
-    color: black;
-    background-color: #ecf0f1;
-  }
-  
-  .search-button:focus {
-    outline: 0;
-  }
-  
-  input:focus {
-    outline: 0;
-    border: 1px solid black;
-  }
-  
-  .user-photo {
-    position: relative;
-    top: 15px;
-    padding-right: 30px;
-    color: $medium-grey;
-  }
-  
-  .video, .bell, .apps {
-    position: relative;
-    top: 10px;
-    padding-right: 20px;
-    font-size: 18px;
-    color: $medium-grey;
-  }
-  
+
+    input {
+      width: 36%;
+      max-width: 562px;
+      height: 30px;
+      padding: 0 10px 0 10px;
+      border: 1px solid $light-grey;
+      border-radius: 0 2px 2px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #bdc3c7;
+    }
+
+    input:focus {
+      outline: 0;
+      border: 1px solid black;
+    }
+
+    .search-button {
+      display: inline-block;
+      height: 30px;
+      padding: 0 25px 0 25px;
+      border: 1px solid $light-grey;
+      border-left: none;
+      border-radius: 0 2px 2px 0;
+      background-color: #f8f8ff;
+      color: #7f8c8d;
+    }
+
+    .search-button:focus {
+      outline: 0;
+    }
+
+    .search-button:hover {
+      color: black;
+      background-color: #ecf0f1;
+    }
+  } // end of search-form
+
   .right-icons {
     width: 200px;
     height: 60px;
     float: right;
     text-align: right;
-  }
-  
-  .left-icons {
-    width: 200px;
-    height: 60px;
-    float: left;
-  }
-}
+
+    .video, 
+    .bell, 
+    .apps {
+      position: relative;
+      top: 10px;
+      padding-right: 20px;
+      font-size: 18px;
+      color: $medium-grey;
+    }
+
+    .user-photo {
+      position: relative;
+      top: 15px;
+      padding-right: 30px;
+      color: $medium-grey;
+    }
+  } // end of right-icons
+} // end of header

@@ -1,77 +1,80 @@
 @import 'variables.scss';
 
-.singer-photo {
-  display: inline-block;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  left: 7%;
-  margin-top: 15px;
-  border-radius: 50%;
-
-  @media screen and (min-width: 1024px) {
-    left: 0;
-  }
-}
-
 .about-song {
   display: block;
-  width: 85%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   border-bottom: 1px solid #ecf0f1;
+
+  .singer-photo {
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-top: 15px;
+    border-radius: 50%;
+  }
+
+  .subscribe-button {
+    position: relative;
+    width: 146px;
+    height: 36px;
+    float: right;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    font-family: $primary-ff;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+  }
 
   .description {
     position: relative;
     display: inline-block;
-    width: 60%;
     height: 100%;
-    font-family: $primary-ff;
     left: 7%;
-    margin-top: -7%;
+    top: 20px;
+    font-family: $primary-ff;
     font-size: 14px;
 
     .profil {
       margin-bottom: 0;
       font-weight: 600;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
 
     .date {
-      margin-top: 0;
       color: grey;
     }
 
-    .concerts {
-      margin-bottom: 0;
-    }
-
-    p.profil {
-      a {
-        color: black;
-        text-decoration: none;
-      }
+    .author {
+     line-height: 60px;
     }
 
     .fulltext {
       display: block;
-      width: 90%;
-      margin-bottom: 20px;
+      width: 76%;
+      margin-bottom: 40px;
 
-      .inna-online, .global-records {
-        margin-bottom: 0;
-        
+      .licensing {
+        margin-top: -2%;
+      }
+
+      .album-online {
         a {
           color: blue;
           text-decoration: none;
         }
       }
 
-      .licensing {
-        margin-top: 0;
-      }
-
-      .album-online {
-
+      .inna-online, .global-records {
+        margin-bottom: 0;
+        
         a {
           color: blue;
           text-decoration: none;
@@ -87,67 +90,72 @@
         padding-bottom: 15px;
 
         .category {
+          display: inline-block;
           color: grey;
         }
 
         .music {
-          position: relative;
-          left: 9.5%;
+          display: inline-block;
+          margin-left: 63px;
           color: blue;
         }
 
-        .license {
-          color: grey;
+        .standard-license {
+          display: inline-block;
+          margin-left: 74px;
+          font-weight: bold;
         }
 
-        .standard-license {
-          position: relative;
-          left: 12%;
-          font-weight: bold;
+        .license {
+          display: inline-block;
+          color: grey;
         }
       }
 
       .music-in-this-video {
         .song {
+          display: inline-block;
           color: grey;
         }
 
         .song-name {
-          position: relative;
-          left: 16%;
+          display: inline-block;
+          margin-left: 93px;
           font-weight: bold;
         }
 
         .artist {
+          display: inline-block;
           color: grey;
         }
 
         .artist-name {
-          position: relative;
-          left: 15.5%;
+          display: inline-block;
+          margin: 10px 0 10px 91px;
           color: blue;
         }
 
         .album {
+          display: inline-block;
           color: grey;
         }
 
         .album-name {
-          position: relative;
-          left: 13.5%;
+          display: inline-block;
+          margin-left: 83px;
           font-weight: bold;
         }
 
         .licensed-by {
+          display: inline-block;
           color: grey;
         }
       }
 
       .license-text {
-        position: relative;
-        width: 83%;
-        left: 24.5%;
-        margin-top: -5%;
+        display: inline-block;
+        width: 79%;
+        margin-left: 45px;
         font-size: 13px;
         font-weight: bold;
       }
@@ -163,28 +171,30 @@
     }
 
     @media screen and (min-width: 1024px){
-      width: 100%;
-      left: 3%;
-      margin-top: -10%;
+      width: 90%;
+      margin-top: -7%;
+      margin-left: 2%;
     }
 
     @media screen and (min-width: 1440px){
-      left: 0;
-      margin-top: -8%;
+      margin-top: -5%;
+      margin-left: 0.5%;
     }
 
-    @media screen and (min-width:2560px){
-      left: -3%;
-      margin-top: -6%;
+    @media screen and (min-width: 2560px) {
+      margin-left: -1.5%;
+      padding-top: 1.5%;
     }
-  }  // end of description
+  } // end of description
 
   .fulltext p,
+  .fulltext span,
   .less {
     display: none;
   }
 
   .fulltext:target p,
+  .fulltext:target span,
   .fulltext:target .less {
     display: block;
   }
@@ -197,5 +207,9 @@
     text-decoration: none;
     color: grey;
     font-weight: bold;
+  }
+
+  @media screen and (min-width: 1024px){
+    width: 97%;
   }
 } // end of about-song
