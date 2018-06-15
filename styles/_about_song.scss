@@ -11,7 +11,7 @@
     position: absolute;
     width: 48px;
     height: 48px;
-    margin-top: 15px;
+    margin-top: -1%;
     border-radius: 50%;
   }
 
@@ -20,7 +20,6 @@
     width: 146px;
     height: 36px;
     float: right;
-    margin-top: 20px;
     border: none;
     border-radius: 2px;
     font-family: $primary-ff;
@@ -30,184 +29,91 @@
   }
 
   .description {
-    position: relative;
-    display: inline-block;
+    width: 76%;;
     height: 100%;
-    left: 7%;
-    top: 20px;
+    margin-left: 7.5%;
+    margin-top: 3%;
     font-family: $primary-ff;
     font-size: 14px;
 
-    .profil {
-      margin-bottom: 0;
-      font-weight: 600;
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
+    a {
+      text-decoration: none;
+      color: black;
     }
 
-    .date {
-      color: grey;
-    }
-
-    .author {
-     line-height: 60px;
+    .official-video {
+      display: inline-block;
     }
 
     .fulltext {
       display: block;
-      width: 76%;
-      margin-bottom: 40px;
+      margin-top: -2%;
+      margin-bottom: 20px;
 
-      .licensing {
-        margin-top: -2%;
+      a {
+        color: $blue;
+        text-decoration: none;
+      }
+      
+      .category {
+        display: inline-block;
+        width: 23%;
       }
 
-      .album-online {
-        a {
-          color: blue;
-          text-decoration: none;
-        }
-      }
-
-      .inna-online, .global-records {
-        margin-bottom: 0;
-        
-        a {
-          color: blue;
-          text-decoration: none;
-        }
-      }
-
-      p#text {
-        margin-top: 30px;
-      }
-
-      p#list {
-        border-bottom: 1px solid #ecf0f1;
-        padding-bottom: 15px;
-
-        .category {
-          display: inline-block;
-          color: grey;
-        }
-
-        .music {
-          display: inline-block;
-          margin-left: 63px;
-          color: blue;
-        }
-
-        .standard-license {
-          display: inline-block;
-          margin-left: 74px;
-          font-weight: bold;
-        }
-
-        .license {
-          display: inline-block;
-          color: grey;
-        }
+      .music {
+        display: inline-block;
       }
 
       .music-in-this-video {
-        .song {
-          display: inline-block;
-          color: grey;
-        }
-
-        .song-name {
-          display: inline-block;
-          margin-left: 93px;
-          font-weight: bold;
-        }
-
-        .artist {
-          display: inline-block;
-          color: grey;
-        }
-
-        .artist-name {
-          display: inline-block;
-          margin: 10px 0 10px 91px;
-          color: blue;
-        }
-
-        .album {
-          display: inline-block;
-          color: grey;
-        }
-
-        .album-name {
-          display: inline-block;
-          margin-left: 83px;
-          font-weight: bold;
-        }
-
-        .licensed-by {
-          display: inline-block;
-          color: grey;
-        }
+        border-top: 1px solid #ecf0f1;
+        margin-top: 5px;
+        padding-top: 15px;
       }
-
-      .license-text {
+    
+      .learn-more {
         display: inline-block;
-        width: 79%;
-        margin-left: 45px;
-        font-size: 13px;
-        font-weight: bold;
+        width: 24%;
+        margin-bottom: 30px;
       }
-      
-      ul {
-        margin-top: 0;
-        padding-left: 0;
 
-        li {
-          list-style-type: none;
-        }
+      .titles {
+        position: absolute;
+        display: inline-block;
+        width: 50%;
       }
-    }
+
+      p,
+      span,
+      .less {
+        display: none;
+      }
+
+      &:target p,
+      &:target span,
+      &:target .less {
+        display: block;
+      }
+
+      &:target .more {
+        display: none;
+      }
+    } // end of fulltext
 
     @media screen and (min-width: 1024px){
       width: 90%;
-      margin-top: -7%;
-      margin-left: 2%;
+      margin-left: 10%;
     }
 
     @media screen and (min-width: 1440px){
-      margin-top: -5%;
-      margin-left: 0.5%;
+      position: relative;
+      margin-left: 7.5%;
     }
 
     @media screen and (min-width: 2560px) {
-      margin-left: -1.5%;
-      padding-top: 1.5%;
+      width: 60%;
+      margin-left: 5%;
     }
   } // end of description
-
-  .fulltext p,
-  .fulltext span,
-  .less {
-    display: none;
-  }
-
-  .fulltext:target p,
-  .fulltext:target span,
-  .fulltext:target .less {
-    display: block;
-  }
-
-  .fulltext:target .more {
-    display: none;
-  }
-
-  .more, .less {
-    text-decoration: none;
-    color: grey;
-    font-weight: bold;
-  }
 
   @media screen and (min-width: 1024px){
     width: 97%;

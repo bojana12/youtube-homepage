@@ -1,0 +1,41 @@
+@import 'variables.scss';
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.color-grey {
+  color: grey !important;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.margin-tb-15 {
+  margin: 15px 0 15px 0;
+}
+
+.margin-tb-20 {
+  margin: 20px 0 20px 0;
+}
+
+.margin-t-15 {
+  margin-top: 15px;
+}
+
+.margin-t-40 {
+  margin-top: 40px;
+}
+
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.fs-13 {
+  font-size: 13px;
+}

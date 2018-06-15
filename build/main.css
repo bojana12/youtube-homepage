@@ -164,14 +164,13 @@ header {
     position: absolute;
     width: 48px;
     height: 48px;
-    margin-top: 15px;
+    margin-top: -1%;
     border-radius: 50%; }
   .about-song .subscribe-button {
     position: relative;
     width: 146px;
     height: 36px;
     float: right;
-    margin-top: 20px;
     border: none;
     border-radius: 2px;
     font-family: Roboto, Arial, sans-serif;
@@ -179,118 +178,63 @@ header {
     background-color: red;
     color: white; }
   .about-song .description {
-    position: relative;
-    display: inline-block;
+    width: 76%;
     height: 100%;
-    left: 7%;
-    top: 20px;
+    margin-left: 7.5%;
+    margin-top: 3%;
     font-family: Roboto, Arial, sans-serif;
     font-size: 14px; }
-    .about-song .description .profil {
-      margin-bottom: 0;
-      font-weight: 600; }
-      .about-song .description .profil a {
-        text-decoration: none;
-        color: black; }
-    .about-song .description .date {
-      color: grey; }
-    .about-song .description .author {
-      line-height: 60px; }
+    .about-song .description a {
+      text-decoration: none;
+      color: black; }
+    .about-song .description .official-video {
+      display: inline-block; }
     .about-song .description .fulltext {
       display: block;
-      width: 76%;
-      margin-bottom: 40px; }
-      .about-song .description .fulltext .licensing {
-        margin-top: -2%; }
-      .about-song .description .fulltext .album-online a {
-        color: blue;
+      margin-top: -2%;
+      margin-bottom: 20px; }
+      .about-song .description .fulltext a {
+        color: #0074D9;
         text-decoration: none; }
-      .about-song .description .fulltext .inna-online, .about-song .description .fulltext .global-records {
-        margin-bottom: 0; }
-        .about-song .description .fulltext .inna-online a, .about-song .description .fulltext .global-records a {
-          color: blue;
-          text-decoration: none; }
-      .about-song .description .fulltext p#text {
-        margin-top: 30px; }
-      .about-song .description .fulltext p#list {
-        border-bottom: 1px solid #ecf0f1;
-        padding-bottom: 15px; }
-        .about-song .description .fulltext p#list .category {
-          display: inline-block;
-          color: grey; }
-        .about-song .description .fulltext p#list .music {
-          display: inline-block;
-          margin-left: 63px;
-          color: blue; }
-        .about-song .description .fulltext p#list .standard-license {
-          display: inline-block;
-          margin-left: 74px;
-          font-weight: bold; }
-        .about-song .description .fulltext p#list .license {
-          display: inline-block;
-          color: grey; }
-      .about-song .description .fulltext .music-in-this-video .song {
+      .about-song .description .fulltext .category {
         display: inline-block;
-        color: grey; }
-      .about-song .description .fulltext .music-in-this-video .song-name {
+        width: 23%; }
+      .about-song .description .fulltext .music {
+        display: inline-block; }
+      .about-song .description .fulltext .music-in-this-video {
+        border-top: 1px solid #ecf0f1;
+        margin-top: 5px;
+        padding-top: 15px; }
+      .about-song .description .fulltext .learn-more {
         display: inline-block;
-        margin-left: 93px;
-        font-weight: bold; }
-      .about-song .description .fulltext .music-in-this-video .artist {
+        width: 24%;
+        margin-bottom: 30px; }
+      .about-song .description .fulltext .titles {
+        position: absolute;
         display: inline-block;
-        color: grey; }
-      .about-song .description .fulltext .music-in-this-video .artist-name {
-        display: inline-block;
-        margin: 10px 0 10px 91px;
-        color: blue; }
-      .about-song .description .fulltext .music-in-this-video .album {
-        display: inline-block;
-        color: grey; }
-      .about-song .description .fulltext .music-in-this-video .album-name {
-        display: inline-block;
-        margin-left: 83px;
-        font-weight: bold; }
-      .about-song .description .fulltext .music-in-this-video .licensed-by {
-        display: inline-block;
-        color: grey; }
-      .about-song .description .fulltext .license-text {
-        display: inline-block;
-        width: 79%;
-        margin-left: 45px;
-        font-size: 13px;
-        font-weight: bold; }
-      .about-song .description .fulltext ul {
-        margin-top: 0;
-        padding-left: 0; }
-        .about-song .description .fulltext ul li {
-          list-style-type: none; }
+        width: 50%; }
+      .about-song .description .fulltext p,
+      .about-song .description .fulltext span,
+      .about-song .description .fulltext .less {
+        display: none; }
+      .about-song .description .fulltext:target p,
+      .about-song .description .fulltext:target span,
+      .about-song .description .fulltext:target .less {
+        display: block; }
+      .about-song .description .fulltext:target .more {
+        display: none; }
     @media screen and (min-width: 1024px) {
       .about-song .description {
         width: 90%;
-        margin-top: -7%;
-        margin-left: 2%; } }
+        margin-left: 10%; } }
     @media screen and (min-width: 1440px) {
       .about-song .description {
-        margin-top: -5%;
-        margin-left: 0.5%; } }
+        position: relative;
+        margin-left: 7.5%; } }
     @media screen and (min-width: 2560px) {
       .about-song .description {
-        margin-left: -1.5%;
-        padding-top: 1.5%; } }
-  .about-song .fulltext p,
-  .about-song .fulltext span,
-  .about-song .less {
-    display: none; }
-  .about-song .fulltext:target p,
-  .about-song .fulltext:target span,
-  .about-song .fulltext:target .less {
-    display: block; }
-  .about-song .fulltext:target .more {
-    display: none; }
-  .about-song .more, .about-song .less {
-    text-decoration: none;
-    color: grey;
-    font-weight: bold; }
+        width: 60%;
+        margin-left: 5%; } }
   @media screen and (min-width: 1024px) {
     .about-song {
       width: 97%; } }
@@ -458,3 +402,33 @@ main {
   @media screen and (min-width: 2560px) {
     main {
       width: 70%; } }
+
+.bold-500 {
+  font-weight: 500; }
+
+.color-grey {
+  color: grey !important; }
+
+.color-blue {
+  color: #0074D9; }
+
+.margin-tb-15 {
+  margin: 15px 0 15px 0; }
+
+.margin-tb-20 {
+  margin: 20px 0 20px 0; }
+
+.margin-t-15 {
+  margin-top: 15px; }
+
+.margin-t-40 {
+  margin-top: 40px; }
+
+.margin-b-20 {
+  margin-bottom: 20px; }
+
+.text-dec-none {
+  text-decoration: none; }
+
+.fs-13 {
+  font-size: 13px; }
