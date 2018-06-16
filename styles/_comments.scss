@@ -10,7 +10,6 @@
     font-size: 16px;
     margin: 25px 0 30px 0;
     
-
     .sort {
       position: relative;
       display: inline-block;
@@ -23,7 +22,7 @@
         margin-left: 6px;
       }
     }
-  }
+  } // end of number-of-comments
 
   .all-comments {
    
@@ -35,26 +34,34 @@
 
     .add-comment {
       position: relative;
-      width: 100%;
+      width: 94%;
       margin-top: 15px;
-
-      img {
-        margin-bottom: 15px;
-      }
 
       p {
         position: absolute;
         top: -25%;
         left: 6%;
         display: inline-block;
-        width: 94%;
+        width: 100%;
         font-size: 14px;
         color: grey;
         padding-bottom: 5px;
         border-bottom: 1px solid #ecf0f1;
+
+        @media screen and (min-width: 1024px){
+          width: 103%;
+        }
+  
+        @media screen and (min-width: 1440px){
+          width: 111%;
+        }
+  
+        @media screen and (min-width: 2560px){
+          width: 119%;
+        }
       }
-    }
-  }
+    } // end of add-comment
+  } // end of all-comments
 
   .listener-comment {
     position: relative;
@@ -126,12 +133,12 @@
           padding-left: 25px;
           color: #404040;
         }
-      }
-    }
-  }
+      } // end of icons
+    } // end of about-listener
+  } // end of listener-comment
 
   @media screen and (min-width: 1024px) {
     width: 60%;
     margin-left: 0;
   }
-}
+} // end of comment

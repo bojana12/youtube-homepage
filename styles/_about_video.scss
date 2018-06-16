@@ -3,7 +3,6 @@
 .about-video {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
 
   .title {
     margin: 20px 0 10px 0;
@@ -50,14 +49,12 @@
         height: 33px;
         border-bottom: 2px solid #1E90FF;
       }
-    }
-  }
+    } // end of view-icons
+  } // end of content
 
   @media screen and (min-width: 1024px) {
-    position: relative;
     width: 97%;
-    margin: 0;
    }
-}
+} // end of about-video
 
 

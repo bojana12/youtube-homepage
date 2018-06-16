@@ -1,7 +1,6 @@
 @import 'variables.scss';
 
 aside {
-  position: relative;
   width: 85%;
   height: 100%;
   margin: 0 auto;
@@ -54,22 +53,10 @@ aside {
       position: absolute;
       display: inline-block;
       margin: 0 0 0 10px;
-      
-      .author-song-name {
-        font-size: 14px;
-        font-weight: 600;
-      }
-      
-      .name-views {
-        font-size: 13px;
-        font-weight: 400;
-        color: grey;
-      }
     }
 
-    .upnext {
+    .first-suggestion {
       padding-bottom: 15px;
-      margin-bottom: 15px;
       border-bottom: 1px solid #ecf0f1;
     }
 
@@ -80,7 +67,6 @@ aside {
     .show-more {
       width: 100%;
       height: 30px;
-      margin-bottom: 20px;
 
       .more-btn {
         width: 100%;
@@ -90,6 +76,6 @@ aside {
         background-color: #ecf0f1;
         color: grey;
       }
-    }
-  }
-}
+    } // end of show-more
+  } // end of thumbnails
+} // end of aside

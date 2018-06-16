@@ -2,6 +2,45 @@ body {
   width: 100%;
   height: 100%; }
 
+.bold-500 {
+  font-weight: 500; }
+
+.fw-400 {
+  font-weight: 400; }
+
+.color-grey {
+  color: grey !important; }
+
+.color-blue {
+  color: #0074D9; }
+
+.margin-tb-15 {
+  margin: 15px 0 15px 0; }
+
+.margin-tb-20 {
+  margin: 20px 0 20px 0; }
+
+.margin-t-15 {
+  margin-top: 15px; }
+
+.margin-t-40 {
+  margin-top: 40px; }
+
+.margin-b-20 {
+  margin-bottom: 20px; }
+
+.margin-b-15 {
+  margin-bottom: 15px; }
+
+.text-dec-none {
+  text-decoration: none; }
+
+.fs-13 {
+  font-size: 13px; }
+
+.fs-14 {
+  font-size: 14px; }
+
 header {
   position: relative;
   width: 100%;
@@ -36,9 +75,9 @@ header {
       border-radius: 0 2px 2px 0;
       font-family: Arial, Helvetica, sans-serif;
       color: #bdc3c7; }
-    header .search-form input:focus {
-      outline: 0;
-      border: 1px solid black; }
+      header .search-form input:focus {
+        outline: 0;
+        border: 1px solid black; }
     header .search-form .search-button {
       display: inline-block;
       height: 30px;
@@ -48,11 +87,11 @@ header {
       border-radius: 0 2px 2px 0;
       background-color: #f8f8ff;
       color: #7f8c8d; }
-    header .search-form .search-button:focus {
-      outline: 0; }
-    header .search-form .search-button:hover {
-      color: black;
-      background-color: #ecf0f1; }
+      header .search-form .search-button:focus {
+        outline: 0; }
+      header .search-form .search-button:hover {
+        color: black;
+        background-color: #ecf0f1; }
   header .right-icons {
     width: 200px;
     height: 60px;
@@ -72,6 +111,17 @@ header {
       padding-right: 30px;
       color: #a9a9a9; }
 
+main {
+  width: 100%;
+  height: 100%; }
+  @media screen and (min-width: 1044px) {
+    main {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 2560px) {
+    main {
+      width: 70%; } }
+
 .container {
   width: 85%;
   height: 100%;
@@ -80,8 +130,7 @@ header {
   @media screen and (min-width: 1024px) {
     .container {
       display: inline-block;
-      width: 63%;
-      border-bottom: 1px solid #ecf0f1; } }
+      width: 63%; } }
   @media screen and (min-width: 1440px) {
     .container {
       width: 68%; } }
@@ -93,17 +142,15 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  height: 450px;
-  margin: 0 auto;
-  margin-top: 15px; }
+  height: 450px; }
+  .youtube-video iframe {
+    width: 100%;
+    height: 100%; }
   @media screen and (min-width: 1024px) {
     .youtube-video {
       display: inline-block;
       width: 97%;
       height: 360px; } }
-  .youtube-video iframe {
-    width: 100%;
-    height: 100%; }
   @media screen and (min-width: 1440px) {
     .youtube-video {
       height: 488px; } }
@@ -113,8 +160,7 @@ header {
 
 .about-video {
   width: 100%;
-  height: 100%;
-  margin: 0 auto; }
+  height: 100%; }
   .about-video .title {
     margin: 20px 0 10px 0;
     font-size: 20px; }
@@ -150,15 +196,13 @@ header {
         border-bottom: 2px solid #1E90FF; }
   @media screen and (min-width: 1024px) {
     .about-video {
-      position: relative;
-      width: 97%;
-      margin: 0; } }
+      width: 97%; } }
 
 .about-song {
   display: block;
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid #ecf0f1; }
+  border-bottom: solid 1px #ecf0f1; }
   .about-song .singer-photo {
     display: inline-block;
     position: absolute;
@@ -173,16 +217,14 @@ header {
     float: right;
     border: none;
     border-radius: 2px;
-    font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
     background-color: red;
     color: white; }
   .about-song .description {
-    width: 76%;
+    width: 75%;
     height: 100%;
     margin-left: 7.5%;
     margin-top: 3%;
-    font-family: Roboto, Arial, sans-serif;
     font-size: 14px; }
     .about-song .description a {
       text-decoration: none;
@@ -213,6 +255,15 @@ header {
         position: absolute;
         display: inline-block;
         width: 50%; }
+        @media screen and (min-width: 1024px) {
+          .about-song .description .fulltext .titles {
+            width: 45%; } }
+        @media screen and (min-width: 1440px) {
+          .about-song .description .fulltext .titles {
+            width: 35%; } }
+        @media screen and (min-width: 2560px) {
+          .about-song .description .fulltext .titles {
+            width: 20%; } }
       .about-song .description .fulltext p,
       .about-song .description .fulltext span,
       .about-song .description .fulltext .less {
@@ -229,18 +280,17 @@ header {
         margin-left: 10%; } }
     @media screen and (min-width: 1440px) {
       .about-song .description {
-        position: relative;
+        width: 76%;
         margin-left: 7.5%; } }
     @media screen and (min-width: 2560px) {
       .about-song .description {
-        width: 60%;
+        width: 50%;
         margin-left: 5%; } }
   @media screen and (min-width: 1024px) {
     .about-song {
       width: 97%; } }
 
 aside {
-  position: relative;
   width: 85%;
   height: 100%;
   margin: 0 auto;
@@ -279,23 +329,14 @@ aside {
     position: absolute;
     display: inline-block;
     margin: 0 0 0 10px; }
-    aside .thumbnails p .author-song-name {
-      font-size: 14px;
-      font-weight: 600; }
-    aside .thumbnails p .name-views {
-      font-size: 13px;
-      font-weight: 400;
-      color: grey; }
-  aside .thumbnails .upnext {
+  aside .thumbnails .first-suggestion {
     padding-bottom: 15px;
-    margin-bottom: 15px;
     border-bottom: 1px solid #ecf0f1; }
   aside .thumbnails .suggestion {
     margin: 10px 0; }
   aside .thumbnails .show-more {
     width: 100%;
-    height: 30px;
-    margin-bottom: 20px; }
+    height: 30px; }
     aside .thumbnails .show-more .more-btn {
       width: 100%;
       height: 100%;
@@ -327,20 +368,27 @@ aside {
     border-radius: 50%; }
   .comments .all-comments .add-comment {
     position: relative;
-    width: 100%;
+    width: 94%;
     margin-top: 15px; }
-    .comments .all-comments .add-comment img {
-      margin-bottom: 15px; }
     .comments .all-comments .add-comment p {
       position: absolute;
       top: -25%;
       left: 6%;
       display: inline-block;
-      width: 94%;
+      width: 100%;
       font-size: 14px;
       color: grey;
       padding-bottom: 5px;
       border-bottom: 1px solid #ecf0f1; }
+      @media screen and (min-width: 1024px) {
+        .comments .all-comments .add-comment p {
+          width: 103%; } }
+      @media screen and (min-width: 1440px) {
+        .comments .all-comments .add-comment p {
+          width: 111%; } }
+      @media screen and (min-width: 2560px) {
+        .comments .all-comments .add-comment p {
+          width: 119%; } }
   .comments .listener-comment {
     position: relative; }
     .comments .listener-comment .about-listener .description {
@@ -391,44 +439,3 @@ aside {
     .comments {
       width: 60%;
       margin-left: 0; } }
-
-main {
-  width: 100%;
-  height: 100%; }
-  @media screen and (min-width: 1044px) {
-    main {
-      width: 90%;
-      margin: 0 auto; } }
-  @media screen and (min-width: 2560px) {
-    main {
-      width: 70%; } }
-
-.bold-500 {
-  font-weight: 500; }
-
-.color-grey {
-  color: grey !important; }
-
-.color-blue {
-  color: #0074D9; }
-
-.margin-tb-15 {
-  margin: 15px 0 15px 0; }
-
-.margin-tb-20 {
-  margin: 20px 0 20px 0; }
-
-.margin-t-15 {
-  margin-top: 15px; }
-
-.margin-t-40 {
-  margin-top: 40px; }
-
-.margin-b-20 {
-  margin-bottom: 20px; }
-
-.text-dec-none {
-  text-decoration: none; }
-
-.fs-13 {
-  font-size: 13px; }
