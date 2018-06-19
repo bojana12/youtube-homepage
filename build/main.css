@@ -382,13 +382,13 @@ aside {
       border-bottom: 1px solid #ecf0f1; }
       @media screen and (min-width: 1024px) {
         .comments .all-comments .add-comment p {
-          width: 103%; } }
+          width: 102%; } }
       @media screen and (min-width: 1440px) {
         .comments .all-comments .add-comment p {
           width: 111%; } }
       @media screen and (min-width: 2560px) {
         .comments .all-comments .add-comment p {
-          width: 119%; } }
+          width: 118%; } }
   .comments .listener-comment {
     position: relative; }
     .comments .listener-comment .about-listener .description {
