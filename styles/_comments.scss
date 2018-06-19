@@ -49,15 +49,18 @@
         border-bottom: 1px solid #ecf0f1;
 
         @media screen and (min-width: 1024px){
-          width: 102%;
+          width: 98.5%;
+          left: 10%;
         }
   
         @media screen and (min-width: 1440px){
-          width: 111%;
+          width: 110%;
+          left: 7%;
         }
   
         @media screen and (min-width: 2560px){
-          width: 118%;
+          width: 117%;
+          left: 7%;
         }
       }
     } // end of add-comment
@@ -74,7 +77,15 @@
         margin-bottom: 1%;
 
         @media screen and (min-width: 1024px) {
-          left: 10%;
+          left: 9%;
+        }
+
+        @media screen and (min-width: 1440px) {
+          left: 7%;
+        }
+
+        @media screen and (min-width: 2560px) {
+          left: 7%;
         }
       }
 

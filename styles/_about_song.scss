@@ -13,6 +13,10 @@
     height: 48px;
     margin-top: -1%;
     border-radius: 50%;
+
+    @media screen and (min-width: 2560px){
+      margin-top: 0;
+    }
   }
 
   .subscribe-button {
@@ -121,7 +125,6 @@
 
     @media screen and (min-width: 2560px) {
       width: 50%;
-      margin-left: 5%;
     }
   } // end of description
 

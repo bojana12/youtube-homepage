@@ -71,7 +71,7 @@ header {
       max-width: 562px;
       height: 30px;
       padding: 0 10px 0 10px;
-      border: 1px solid #b2bec3;
+      border: 1px solid #D3D3D3;
       border-radius: 0 2px 2px 0;
       font-family: Arial, Helvetica, sans-serif;
       color: #bdc3c7; }
@@ -82,9 +82,9 @@ header {
       display: inline-block;
       height: 30px;
       padding: 0 25px 0 25px;
-      border: 1px solid #b2bec3;
-      border-left: none;
+      border: 1px solid #D3D3D3;
       border-radius: 0 2px 2px 0;
+      border-left: none;
       background-color: #f8f8ff;
       color: #7f8c8d; }
       header .search-form .search-button:focus {
@@ -92,6 +92,9 @@ header {
       header .search-form .search-button:hover {
         color: black;
         background-color: #ecf0f1; }
+      @media screen and (min-width: 2560px) {
+        header .search-form .search-button {
+          border-left: 1px solid #D3D3D3; } }
   header .right-icons {
     width: 200px;
     height: 60px;
@@ -120,7 +123,7 @@ main {
       margin: 0 auto; } }
   @media screen and (min-width: 2560px) {
     main {
-      width: 70%; } }
+      width: 50%; } }
 
 .container {
   width: 85%;
@@ -156,7 +159,7 @@ main {
       height: 488px; } }
   @media screen and (min-width: 2560px) {
     .youtube-video {
-      height: 700px; } }
+      height: 500px; } }
 
 .about-video {
   width: 100%;
@@ -210,6 +213,9 @@ main {
     height: 48px;
     margin-top: -1%;
     border-radius: 50%; }
+    @media screen and (min-width: 2560px) {
+      .about-song .singer-photo {
+        margin-top: 0; } }
   .about-song .subscribe-button {
     position: relative;
     width: 146px;
@@ -284,8 +290,7 @@ main {
         margin-left: 7.5%; } }
     @media screen and (min-width: 2560px) {
       .about-song .description {
-        width: 50%;
-        margin-left: 5%; } }
+        width: 50%; } }
   @media screen and (min-width: 1024px) {
     .about-song {
       width: 97%; } }
@@ -308,7 +313,7 @@ aside {
       width: 28%; } }
   @media screen and (min-width: 2560px) {
     aside {
-      width: 18%; } }
+      width: 15%; } }
   aside .up-next {
     display: inline-block;
     margin-top: 0; }
@@ -382,13 +387,16 @@ aside {
       border-bottom: 1px solid #ecf0f1; }
       @media screen and (min-width: 1024px) {
         .comments .all-comments .add-comment p {
-          width: 102%; } }
+          width: 98.5%;
+          left: 10%; } }
       @media screen and (min-width: 1440px) {
         .comments .all-comments .add-comment p {
-          width: 111%; } }
+          width: 110%;
+          left: 7%; } }
       @media screen and (min-width: 2560px) {
         .comments .all-comments .add-comment p {
-          width: 118%; } }
+          width: 117%;
+          left: 7%; } }
   .comments .listener-comment {
     position: relative; }
     .comments .listener-comment .about-listener .description {
@@ -397,7 +405,13 @@ aside {
       margin-bottom: 1%; }
       @media screen and (min-width: 1024px) {
         .comments .listener-comment .about-listener .description {
-          left: 10%; } }
+          left: 9%; } }
+      @media screen and (min-width: 1440px) {
+        .comments .listener-comment .about-listener .description {
+          left: 7%; } }
+      @media screen and (min-width: 2560px) {
+        .comments .listener-comment .about-listener .description {
+          left: 7%; } }
     .comments .listener-comment .about-listener .visitor-photo {
       position: absolute; }
     .comments .listener-comment .about-listener .listener-name {
